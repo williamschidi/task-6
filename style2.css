@@ -35,6 +35,11 @@ section {
   align-items: center;
   gap: 3rem;
 }
+
+section a {
+  text-decoration: none;
+  color: #fff;
+}
 figure {
   display: flex;
   align-items: center;
