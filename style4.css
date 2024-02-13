@@ -21,6 +21,7 @@ body {
   color: #fff;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 nav {
@@ -66,9 +67,9 @@ nav {
   top: 5rem;
   right: -100%;
   background-color: #e6caca;
-  opacity: 0.8;
   width: 20rem;
   transition: right 0.5s ease;
+  z-index: 100;
 }
 
 .modal-nav {
@@ -98,33 +99,6 @@ nav {
 
 .close {
   color: #aaa;
-}
-
-@media (max-width: 600px) {
-  header {
-    padding: 1.5rem 3rem;
-    font-size: 1.2rem;
-  }
-
-  .nav-left,
-  .nav-right {
-    max-width: 60rem;
-    display: none;
-  }
-
-  .logo {
-    width: 10rem;
-  }
-
-  .icon {
-    font-size: 3rem;
-  }
-  .hamburger {
-    display: block;
-  }
-  /* .modal {
-    display: block;
-  } */
 }
 
 .hero-section {
@@ -283,6 +257,10 @@ nav {
   top: 50%;
   right: 0.5rem;
 }
+.show {
+  display: block;
+}
+
 .align-section {
   padding: 2rem 0 1.5rem 8rem;
   overflow: hidden;
@@ -303,6 +281,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  gap: 1.4rem;
 }
 
 .contact {
@@ -345,9 +324,32 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .main-header {
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  .nav-left,
+  .nav-right {
+    max-width: 60rem;
+    display: none;
+  }
+
+  .logo {
+    width: 10rem;
+  }
+
+  .icon {
+    font-size: 3rem;
+  }
+  .hamburger {
+    display: block;
+  }
+
   .hero-section-article {
+    color: #fff;
     max-width: 45rem;
-    padding: 8rem 2rem 0 4rem;
+    padding: 8rem 2rem 0 2rem;
   }
 
   .detail {
@@ -356,26 +358,55 @@ footer {
   }
 
   .swiper-container {
-    padding: 0 0 2rem 4rem;
+    padding: 0 0 2rem 2rem;
+    align-items: center;
   }
 
-  .hero-section-article {
-    color: #fff;
-    max-width: 55rem;
-    padding: 10rem 0 0 4rem;
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+  }
+
+  .image {
+    width: 25rem;
+    height: 20rem;
+    padding-bottom: 0.5rem;
+  }
+  .image-1 {
+    width: 30rem;
+    height: 35rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .show {
+    display: none;
   }
 
   .align-section {
-    padding: 2rem 0 1.5rem 4rem;
+    padding: 2rem 0 1.5rem 2rem;
   }
   footer {
+    font-size: 1rem;
     padding-right: 2rem;
     padding-left: 2rem;
   }
   .footer-container {
     max-width: 50rem;
   }
+  .social {
+    gap: 0.8rem;
+  }
+  .social-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: #fff;
+  }
+
   .contact {
-    gap: 3.5rem;
+    gap: 2.4rem;
   }
 }

@@ -81,3 +81,22 @@ figure img {
   cursor: pointer;
   color: #fff;
 }
+
+@media (max-width: 600px) {
+  main {
+    max-width: 60rem;
+    margin: 6rem auto;
+    gap: 2rem;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  figure img {
+    width: 15rem;
+    height: 15rem;
+  }
+}
