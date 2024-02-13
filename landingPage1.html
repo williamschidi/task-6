@@ -4,56 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link href="style3.css" rel="stylesheet" />
+    <link href="style4.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <nav>
-        <div class="left-nav">
-          <img src="img/logo.PNG" alt="logo" />
-          <ul class="left">
-            <li>Ana Sayfa</li>
-            <li>Diziler</li>
-            <li>Filmler</li>
-            <li>Yeni ve Populer</li>
-            <li>Listem</li>
-          </ul>
-        </div>
-        <div class="right-nav">
-          <ul>
-            <li><ion-icon name="search" class="icon"></ion-icon></li>
-            <li>Cocuk</li>
-            <li><ion-icon name="gift-outline" class="icon"></ion-icon></li>
-            <li><ion-icon name="notifications" class="icon"></ion-icon></li>
-            <li>
-              <ion-icon name="person-circle-outline" class="icon"></ion-icon>
-            </li>
-            <li>
-              <ion-icon name="caret-down-outline" class="icon"></ion-icon>
-            </li>
-          </ul>
+        <img src="img/logo.PNG" alt="logo" class="logo" />
+        <ul class="nav-left">
+          <li>Ana Sayfa</li>
+          <li>Diziler</li>
+          <li>Filmler</li>
+          <li>Yeni ve Populer</li>
+          <li>Listem</li>
+        </ul>
+      </nav>
+      <nav class="right-nav-container">
+        <ul class="nav-right">
+          <li><ion-icon name="search" class="icon"></ion-icon></li>
+          <li>Cocuk</li>
+          <li><ion-icon name="gift-outline" class="icon"></ion-icon></li>
+          <li><ion-icon name="notifications" class="icon"></ion-icon></li>
+          <li>
+            <ion-icon name="person-circle-outline" class="icon"></ion-icon>
+          </li>
+          <li>
+            <ion-icon name="caret-down-outline" class="icon"></ion-icon>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <ion-icon name="menu-outline" class="icon hamburger-icon"></ion-icon>
         </div>
       </nav>
+      <aside id="modal" class="modal">
+        <ul class="modal-nav">
+          <li>Ana Sayfa</li>
+          <li>Diziler</li>
+          <li>Filmler</li>
+          <li>Yeni ve Populer</li>
+          <li>Listem</li>
+        </ul>
+      </aside>
     </header>
     <main>
-      <section class="hero-section align-section">
-        <article class="description">
-          <div class="article-head">
-            <h1>YANIMDA</h1>
-            <p class="sub-heading">KAL</p>
-          </div>
+      <section class="hero-section">
+        <article class="hero-section-article">
+          <header class="article-head">
+            <h1 class="hero-section-title">YANIMDA</h1>
+            <p class="hero-section-sub-title">KAL</p>
+          </header>
           <div class="sub-heading-1">
             <div class="span">
               <span>TOP</span><span class="number">10</span>
             </div>
-
             <h3>Turkiye'de Bugun 4 Numara</h3>
           </div>
           <p class="detail">
@@ -75,7 +83,8 @@
         </article>
 
         <!--  -->
-        <div class="swiper-container">
+
+        <div class="swiper-container hide">
           <p class="title">Netflix'te Populer</p>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -381,6 +390,7 @@
         </div>
       </section>
     </main>
+
     <footer>
       <div class="footer-container">
         <div class="social">
@@ -434,5 +444,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

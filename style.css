@@ -20,7 +20,6 @@ html {
 }
 header {
   padding: 2rem 5rem;
-  /* margin-left: 5rem; */
 }
 
 section {
@@ -122,4 +121,28 @@ footer {
   border: 1px solid #fff;
   display: flex;
   gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 1.5rem 3rem;
+  }
+  section {
+    max-width: 30rem;
+  }
+  .section-content {
+    padding: 2rem;
+  }
+  footer {
+    max-width: 60rem;
+  }
+
+  .footer-container {
+    max-width: 100%;
+    padding: 1.5rem 3rem 1rem;
+  }
+
+  .contact-details {
+    gap: 8rem;
+  }
 }
