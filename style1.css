@@ -241,6 +241,7 @@ footer {
   }
 
   .header-nav {
+    gap: 1rem;
     font-size: 1.2rem;
   }
 
@@ -286,34 +287,33 @@ footer {
   }
 
   .sub-section {
-    padding: 2rem;
-    max-width: 60rem;
+    padding: 3rem 3rem 3rem 2rem;
+    max-width: 40rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* flex-direction: column; */
-    gap: 4rem;
+    gap: 1rem;
   }
 
   .section-image {
-    width: 15rem;
-    height: 10rem;
+    width: 11rem;
+    height: 7rem;
   }
 
   article {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    width: 30%;
+    gap: 1rem;
+    width: 50%;
   }
 
   article h2 {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
 
   .FAQ {
-    width: 60rem;
+    max-width: 60rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -321,17 +321,24 @@ footer {
     align-items: flex-start;
   }
 
+  .question-container {
+    padding: 1rem 0;
+  }
   .question {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 6rem;
+    gap: 10rem;
     max-width: 60rem;
     background: rgb(41, 40, 40);
     margin-bottom: 0.4rem;
     padding: 0.5rem 0.8rem;
     font-size: 1.3rem;
     cursor: pointer;
+  }
+  .sub p {
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
   }
 
   .FAQ h2 {

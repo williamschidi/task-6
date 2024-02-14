@@ -398,15 +398,22 @@ footer {
     max-width: 50rem;
   }
   .social {
-    gap: 0.8rem;
+    gap: 1rem;
   }
   .social-icon {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.6rem;
+    height: 1.6rem;
     fill: #fff;
   }
 
   .contact {
     gap: 2.4rem;
+  }
+  .footer-btn {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    color: #fff;
   }
 }
