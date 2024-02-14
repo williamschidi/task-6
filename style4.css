@@ -227,7 +227,6 @@ nav {
   justify-content: center;
   align-items: flex-start;
   padding: 0 0 2rem 8rem;
-  /* max-width: 130rem; */
 }
 
 .swiper-wrapper {
@@ -391,6 +390,7 @@ footer {
   }
   footer {
     font-size: 1rem;
+    padding-top: 2.4rem;
     padding-right: 2rem;
     padding-left: 2rem;
   }

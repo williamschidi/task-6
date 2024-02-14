@@ -63,7 +63,7 @@ nav {
 }
 
 .hero-section {
-  width: 50rem;
+  max-width: 50rem;
 
   margin: 7rem auto;
   display: flex;
@@ -119,7 +119,7 @@ p {
 
 .sub-section {
   padding: 3rem 0;
-  width: 80rem;
+  max-width: 80rem;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -128,7 +128,7 @@ p {
 }
 
 .section-image {
-  width: 20rem;
+  max-width: 20rem;
   height: 15rem;
 }
 
@@ -297,7 +297,7 @@ footer {
   }
 
   .section-image {
-    width: 11rem;
+    max-width: 11rem;
     height: 7rem;
   }
 
