@@ -308,7 +308,10 @@ footer {
   }
 
   article h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+  article p {
+    font-size: 1.1rem;
   }
 
   .FAQ {
