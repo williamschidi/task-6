@@ -372,7 +372,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-width: 601px) and (max-width: 1000px) {
   .hero-section {
     max-width: 46rem;
     margin: 9rem auto;
@@ -424,13 +424,9 @@ footer {
     max-width: 90rem;
   }
 
-  /* .sub-cta .input {
-    max-width: 80rem;
-  }
-
   .sub-cta .ctaBtn {
     max-width: 30rem;
-  } */
+  }
 
   footer {
     padding: 3rem;
