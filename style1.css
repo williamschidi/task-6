@@ -193,7 +193,7 @@ footer {
 .contact-details {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   gap: 22rem;
 }
 
@@ -369,5 +369,78 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .hero-section {
+    max-width: 46rem;
+    margin: 9rem auto;
+  }
+
+  .hero-section h2 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    max-width: 42rem;
+  }
+
+  .input {
+    padding: 0.7rem;
+    outline: none;
+    max-width: 40rem;
+  }
+
+  .sub-section {
+    padding: 3rem 3rem;
+    max-width: 70rem;
+    gap: 12rem;
+  }
+
+  .FAQ {
+    gap: 4rem;
+  }
+
+  .question {
+    gap: 28rem;
+    max-width: 100rem;
+  }
+
+  .FAQ h2 {
+    font-size: 3rem;
+    padding-top: 2.4rem;
+  }
+
+  .sub {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .sub p {
+    font-size: 1.4rem;
+    max-width: 90rem;
+  }
+
+  /* .sub-cta .input {
+    max-width: 80rem;
+  }
+
+  .sub-cta .ctaBtn {
+    max-width: 30rem;
+  } */
+
+  footer {
+    padding: 3rem;
+  }
+
+  .footer-container {
+    max-width: 70rem;
+  }
+
+  .contact-details {
+    gap: 5rem;
   }
 }
